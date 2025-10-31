@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Observable Framework
+dist/
+.observablehq/cache/
+
+# PDF Export
+pdf-export/node_modules/
+pdf-export/package-lock.json
+pdf-export/output/
+
+# Keep example PDFs for distribution
+!src/data/*.pdf
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

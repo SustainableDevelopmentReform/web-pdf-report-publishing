@@ -5,24 +5,26 @@ title: Observable Framework + PDF Export Template
 
 # Observable Framework + PDF Export Template
 
-Welcome to this template for creating beautiful, interactive data reports that can be exported to PDF.
+Welcome! This is a minimal starter template demonstrating Observable Framework with PDF export capabilities.
+
+**Replace this content with your own** - these example pages show what's possible and can be deleted once you're familiar with the system.
 
 ---
 
-## About This Template
+## What This Template Provides
 
-This template combines [Observable Framework](https://observablehq.com/framework/) with a custom PDF export system, allowing you to:
+Create beautiful, interactive data reports and documentation:
 
-1. **Author content in Markdown** with live JavaScript and data visualizations
-2. **Preview interactively** during development
-3. **Build static websites** for deployment
-4. **Export to PDF** with custom styling and formatting
+- **Write in Markdown** with embedded JavaScript
+- **Live preview** during development
+- **Static site** generation for fast deployment
+- **PDF export** with one command
 
 ---
 
-## Example Visualization
+## Quick Example
 
-Here's a simple example using D3 to demonstrate Observable Framework's capabilities:
+Here's a simple interactive visualization to demonstrate Observable Framework's capabilities:
 
 ```js
 import * as d3 from "npm:d3";
@@ -36,7 +38,7 @@ const data = [
   {category: "E", value: 20}
 ];
 
-// Create simple bar chart
+// Create a simple bar chart
 const width = 640;
 const height = 400;
 const marginTop = 20;
@@ -81,26 +83,39 @@ svg.append("g")
 display(svg.node());
 ```
 
+This chart is **interactive in the browser** and **renders correctly in PDF exports**.
+
 ---
 
 ## Getting Started
 
-1. Install dependencies: `npm install`
-2. Install PDF export dependencies: `npm run pdf:install`
-3. Start development server: `npm run dev`
-4. Build for production: `npm run build`
-5. Export to PDF: `npm run pdf:build`
-
-See the [README](../README.md) for detailed documentation.
+1. **Explore** the example pages in the sidebar
+2. **Modify** the content in `src/*.md` files
+3. **Run** `npm run dev` to preview changes
+4. **Build** with `npm run pdf:build` to generate PDFs
+5. **Deploy** to GitHub Pages, Cloudflare, or any static host
 
 ---
 
-## Template Pages
+## Example Pages
 
-This template includes example pages demonstrating different use cases:
+This template includes three example pages:
 
-- **Home** (this page) - Overview with interactive visualization • [Download PDF](./_file/data/index.pdf)
-- **Report 1** - [View online](./inception-report) • [Download PDF](./_file/data/inception-report.pdf)
-- **Report 2** - [View online](./interim-report) • [Download PDF](./_file/data/interim-report.pdf)
+- **Home** (this page) - Overview with basic visualization • [Download PDF](./_file/data/index.pdf)
+- **Example 1** - [View online](./inception-report) • [Download PDF](./_file/data/inception-report.pdf)
+- **Example 2** - [View online](./interim-report) • [Download PDF](./_file/data/interim-report.pdf)
 
-Edit these pages in the `src/` directory to create your own content. PDFs are automatically generated using the custom export system.
+---
+
+## Next Steps
+
+1. **Customize** `observablehq.config.js` with your site title and settings
+2. **Replace** these example pages with your own content
+3. **Configure** PDF export settings in `pdf-export/config/config.json`
+4. **Add** your data visualizations and analysis
+
+See the [README](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME#readme) for complete documentation.
+
+---
+
+<small>Built with [Observable Framework](https://observablehq.com/framework/) • This content can be replaced with your own</small>

@@ -13,26 +13,14 @@
     "timeout": 30000
   },
   "documents": {
-    "dashboard": {
-      "format": "A3",
-      "landscape": true,
-      "margin": {
-        "top": "15mm",
-        "right": "15mm",
-        "bottom": "15mm",
-        "left": "15mm"
-      }
-    },
-    "example-dashboard": {
-      "format": "A3",
-      "landscape": true
-    },
-    "report": {
+    "index": {
       "format": "A4"
     },
-    "chart": {
-      "format": "A4",
-      "landscape": true
+    "inception-report": {
+      "format": "A4"
+    },
+    "interim-report": {
+      "format": "A4"
     }
   },
   "excludeFiles": [
@@ -59,18 +47,6 @@
     "position": {
       "class": "qr-code-margin-left",
       "title": "View Online"
-    },
-    "documents": {
-      "dashboard": {
-        "position": {
-          "class": "qr-code-top-right-dashboard"
-        }
-      },
-      "report": {
-        "position": {
-          "class": "qr-code-margin-left"
-        }
-      }
     }
   }
 }

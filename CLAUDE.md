@@ -1,6 +1,8 @@
 # Observable Framework + PDF Export - Technical Guide
 
-This document provides technical details about the Observable Framework implementation and PDF export system in this template.
+> **Note:** This file provides detailed technical documentation for developers and AI coding assistants (like [Claude Code](https://claude.com/claude-code)). If you're not using an AI assistant or don't need deep technical details, you can safely delete this file. For getting started, see the [README](./README.md) instead.
+
+This document provides comprehensive technical details about the Observable Framework implementation and PDF export system in this template.
 
 ## Observable Framework Architecture
 

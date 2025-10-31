@@ -1,34 +1,70 @@
 ---
 toc: true
-title: Example Report 2
+title: Example Page 2
 ---
 
-# Example Report 2
+# Example Page 2
 
-This is a placeholder for your second report page, demonstrating how multiple pages work together in an Observable Framework site.
+This page demonstrates how multiple pages work together in Observable Framework. **Replace with your own content.**
 
-## Overview
+## Multi-Page Documentation
 
-This page shows how you can structure multi-page documentation or report sites. Each page in the `src/` directory becomes a route in your published site.
+Observable Framework makes it easy to create multi-page sites:
+
+- Each `.md` file in `src/` becomes a page
+- Pages are organized via `observablehq.config.js`
+- Navigation is automatically generated
+- All pages can be exported to PDF individually
 
 ## Data Integration
 
-You can load data from various sources:
+You can load and visualize data from various sources:
 
-- CSV, JSON, or other data files
-- Database queries
-- API endpoints
-- Data loaders written in any language
+**Static files:**
+- CSV, JSON, or other data files in `src/data/`
+- Direct file references via `FileAttachment()`
 
-Observable Framework's data loader system makes it easy to work with data from anywhere.
+**Data loaders:**
+- Scripts that run at build time
+- Fetch from APIs, databases, or other sources
+- Process and transform data before output
 
-## Collaboration
+**Example:**
+```markdown
+\`\`\`js
+const data = FileAttachment("data/myfile.csv").csv();
+display(data);
+\`\`\`
+```
 
-Observable Framework sites are just markdown files and code, which means:
+## Collaboration & Deployment
 
-- Easy version control with Git
-- Straightforward collaboration workflows
-- Simple deployment to static hosting
-- PDF export for sharing offline
+Benefits of the framework approach:
 
-Replace this placeholder content with your own analysis, visualizations, and findings.
+- **Version control** - Track changes with Git
+- **Collaboration** - Multiple people can work on different pages
+- **Static hosting** - Deploy anywhere (GitHub Pages, Cloudflare, etc.)
+- **PDF sharing** - Export for offline distribution
+
+## Customization
+
+You can customize many aspects:
+
+- **Styling** - Add custom CSS for your brand
+- **Layout** - Control sidebar, TOC, and page structure
+- **PDF output** - Configure page size, margins, and styling
+- **Interactive elements** - Add JavaScript visualizations
+
+## Getting Started
+
+To create your own content:
+
+1. Delete or replace these example pages
+2. Create new `.md` files in `src/`
+3. Update the sidebar in `observablehq.config.js`
+4. Run `npm run dev` to preview
+5. Build with `npm run pdf:build` when ready
+
+---
+
+**Ready to begin?** Check out the [README](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME#readme) for detailed instructions, or explore [CLAUDE.md](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME/blob/main/CLAUDE.md) for technical details.

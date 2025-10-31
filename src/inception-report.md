@@ -1,36 +1,59 @@
 ---
 toc: true
-title: Example Report 1
+title: Example Page 1
 ---
 
-# Example Report 1
+# Example Page 1
 
-This is a placeholder for your first report page. This example demonstrates basic Observable Framework features including markdown formatting, table of contents, and footnotes.
+This is a minimal example page demonstrating basic Observable Framework features. **Replace this with your own content.**
 
-## Introduction
+## Overview
 
-Observable Framework allows you to create rich, interactive reports that combine narrative text with live data visualizations[^1]. You can write in standard markdown while embedding JavaScript code for dynamic content.
+This example demonstrates:
 
-## Key Features
+- Markdown formatting and structure
+- Table of contents (enabled via frontmatter)
+- Footnote citations for academic-style references
+- PDF export capabilities
 
-Observable Framework provides several powerful capabilities:
+Observable Framework makes it easy to create professional documentation and reports[^1].
 
-- **Reactive programming** - Code cells automatically update when dependencies change
-- **Data loaders** - Efficiently load and cache data from various sources
-- **Beautiful defaults** - Professional styling out of the box
-- **PDF export** - Convert your web pages to PDF with custom styling
+## Content Structure
 
-## Example Content
+You can organize your content with standard markdown headings, lists, and formatting.
 
-This is where your content would go. You can include:
+### Features
 
-- Analysis and findings
-- Data visualizations
-- Tables and charts
-- Images and diagrams
+- **Simple markdown syntax**
+- **Live preview** during development
+- **Static generation** for fast loading
+- **PDF export** with custom styling
 
-The PDF export system preserves your content's formatting while applying print-optimized styling.
+### Example Table
+
+| Feature | Status |
+|---------|--------|
+| Markdown support | ✓ |
+| Interactive JavaScript | ✓ |
+| PDF export | ✓ |
+| Footnotes | ✓ |
+
+## Citations
+
+When you need to cite sources, use markdown footnotes[^2]. They appear at the bottom of the page in both web and PDF versions.
+
+Multiple citations can reference the same source[^1], and you can have as many as needed.
+
+## Next Steps
+
+1. Replace this content with your own
+2. Add interactive visualizations with JavaScript code blocks
+3. Configure PDF export settings in `pdf-export/config/config.json`
+4. Build and deploy your site
+
+See the [home page](./index) for more examples, or check the [README](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME#readme) for complete documentation.
 
 ---
 
-[^1]: Observable Framework Documentation, "Getting Started", Observable Inc., 2024, https://observablehq.com/framework/getting-started
+[^1]: Observable Framework Documentation, "Getting Started", Observable Inc., 2025, https://observablehq.com/framework/getting-started
+[^2]: Markdown-it-footnote plugin enables academic-style citations, https://github.com/markdown-it/markdown-it-footnote

@@ -1,9 +1,30 @@
 {
   "name": "observable-framework-pdf-template",
   "version": "1.0.0",
-  "description": "Observable Framework template with custom PDF export capabilities",
+  "description": "Observable Framework template with custom PDF export capabilities for creating interactive data reports and documentation",
   "type": "module",
-  "private": true,
+  "keywords": [
+    "observable",
+    "framework",
+    "pdf",
+    "export",
+    "data-visualization",
+    "markdown",
+    "static-site",
+    "reports",
+    "documentation",
+    "d3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR-USERNAME/YOUR-REPO-NAME/issues"
+  },
+  "homepage": "https://github.com/YOUR-USERNAME/YOUR-REPO-NAME#readme",
+  "author": "Ben Milligan",
+  "license": "MIT",
   "scripts": {
     "clean": "rimraf src/.observablehq/cache",
     "build": "observable build && npm run build:copy-pdfs",
