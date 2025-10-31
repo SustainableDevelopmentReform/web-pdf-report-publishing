@@ -1,0 +1,32 @@
+{
+  "name": "observable-framework-pdf-template",
+  "version": "1.0.0",
+  "description": "Observable Framework template with custom PDF export capabilities",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf src/.observablehq/cache",
+    "build": "observable build && npm run build:copy-pdfs",
+    "build:copy-pdfs": "mkdir -p dist/_file/data && cp src/data/*.pdf dist/_file/data/ 2>/dev/null || true",
+    "dev": "observable preview",
+    "deploy": "observable deploy",
+    "observable": "observable",
+    "pdf:export": "cd pdf-export && npm run export",
+    "pdf:copy": "cp pdf-export/output/index.pdf src/data/ && cp pdf-export/output/inception-report.pdf src/data/ && cp pdf-export/output/interim-report.pdf src/data/",
+    "pdf:build": "observable build && npm run pdf:export && npm run pdf:copy && npm run build:copy-pdfs",
+    "pdf:watch": "cd pdf-export && npm run export:watch",
+    "pdf:install": "cd pdf-export && npm install"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.3",
+    "d3-dsv": "^3.0.1",
+    "d3-time-format": "^4.1.0",
+    "markdown-it-footnote": "^4.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
