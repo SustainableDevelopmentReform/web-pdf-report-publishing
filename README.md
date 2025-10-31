@@ -6,6 +6,8 @@
 
 A production-ready template for creating interactive data reports and documentation using [Observable Framework](https://observablehq.com/framework/) with custom PDF export capabilities.
 
+Live demo: https://sustainabledevelopmentreform.github.io/web-pdf-report-publishing/ 
+
 ## Features at a Glance
 
 - **📝 Markdown-based Authoring** - Write content in markdown with embedded JavaScript for interactivity
